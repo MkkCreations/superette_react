@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.loginDiv {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 183, 183);
+}
+
+.loginDiv form {
+    width: 60%;
+    max-width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.loginDiv form span {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    border-radius: 6px;
+    
+    overflow: hidden;
+}
+
+.loginDiv form span figure {
+    width: 20%;
+    min-width: 40px;
+    display: flex;
+    background-color: #676767;
+}
+.loginDiv form span figure img {
+    margin: auto;
+    width: fit-content;
+}
+.loginDiv form input {
+    width: 100%;
+    background-color: #d8d8d8 ;
+    border: none;
+    padding-left: 10px;
+}
+
+.forgot {
+    width: 60%;
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    font-size: 0.8em;
+    color: rgb(2, 123, 179);
+    font-style: italic;
+}
+
+.loginDiv form button {
+    width: 30%;
+    height: 40px;
+    background-color: rgba(0, 135, 208, 0.721);
+    color: #feeeee;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.loginDiv form button:hover {
+    background-color: rgb(52, 135, 176);
+    color: #000;
+    cursor: pointer;
+}
+
+.backHome {
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    color: rgb(43, 43, 43);
+}
+.backHome:hover {
+    color: rgb(2, 123, 179);
+}
+
+@media screen and (max-width: 650px) {
+    .loginDiv form {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .loginDiv form {
+        width: 90%;
+    }
+    .loginDiv form span {
+        width: 80%;
+    }
+    .forgot {
+        width: 80%;
+    }
+}

@@ -1,0 +1,56 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(149, 183, 183);
+    padding: 2% 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: double underline 2px rgba(31, 102, 107, 0.655);
+}
+
+.header div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.header > div > p {
+    color: brown;
+    cursor: pointer;
+}
+
+.header > div > p::after {
+    content: '';
+    background-image: url('../../samples/log-out.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: 4px;
+}
+
+.header > div > p:hover {
+    color: rgb(0, 0, 0);
+}
